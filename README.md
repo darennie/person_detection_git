@@ -2,6 +2,10 @@
 
 Notes on setting up person counter using DepthAI Oak 1 camera
 
+![Oak 1 Camera](https://cdn.shopify.com/s/files/1/0106/8325/2802/products/OAK-1_1600x.jpg?v=1627660345)
+
+[Oak 1 product website](https://shop.luxonis.com/products/megaai-kit)
+
 ## Setup DepthAI
 
 This Python script requires the DepthAI repo installed on host machine. Install instructions are [in the DepthAI Docs](https://docs.luxonis.com/en/latest/), basic instructions are:
@@ -23,11 +27,18 @@ python3 depthai_demo.py
 The [Hello World](https://docs.luxonis.com/projects/api/en/latest/tutorials/hello_world/) example on the DepthAI docs is always a good place to start if you are using this device for first time and wanting to check you have the dependcies you need
 
 
-## Running the script
+## Running scripts in this folder
 
-The script take one argument as input "-cam" to select the Oak1 as input stream.
+The script take one argument as input "-cam" to select the Oak1 as input stream. Main.py records count every frame to csv file.
 
 ```terminal
 python3 main.py -cam
 ```
+
+Oak1 version writes to csv once every minute and records the max number of people counted in a scene over that minute
+
+```terminal
+python3 oak1_counter.py -cam
+```
+
 
