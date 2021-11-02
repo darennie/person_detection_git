@@ -42,10 +42,14 @@ starttime_unix = time.time()
 # starting the count
 maxcount = 0
 
+# Check current working directory.
+#retval = os.getcwd()
+#print("Current working directory %s" % retval)
+
 
 #change as needed to get the right directory (I know there is a more elegant way to do this but I can't remember!)
 filename = 'detection-' +str(datetime.datetime.now().strftime("%Y_%m_%d-%H_%M_%S")+'.csv')
-os.chdir('/Users/danielrennie/Dropbox/My Mac (Daniel’s MacBook Air)/Documents/CASA/UCL/AECPCR/person_detection')
+#os.chdir('/Users/danielrennie/Dropbox/My Mac (Daniel’s MacBook Air)/Documents/CASA/UCL/AECPCR/person_detection')
 
 
 # function to count the people
