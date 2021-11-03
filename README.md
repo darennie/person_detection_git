@@ -41,4 +41,12 @@ Oak1 version writes to csv once every minute and records the max number of peopl
 python3 oak1_counter.py -cam
 ```
 
+## Notes for running on RPi
+
+To run on RPi follow same process to install DepthAI but also make sure OpenCV is installed:
+
+```terminal 
+sudo apt-get update && sudo apt-get upgrade
+sudo pip install opencv-contrib-python
+```
 
