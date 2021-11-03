@@ -47,6 +47,6 @@ To run on RPi follow same process to install DepthAI but also make sure OpenCV i
 
 ```terminal 
 sudo apt-get update && sudo apt-get upgrade
-sudo pip install opencv-contrib-python
+sudo apt install git python3-pip python3-opencv libcurl4 libatlas-base-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev libqtgui4 libqt4-test
 ```
 
