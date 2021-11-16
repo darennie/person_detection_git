@@ -8,7 +8,7 @@ Notes on setting up person counter using DepthAI Oak 1 camera
 
 ## Setup DepthAI
 
-This Python script requires the DepthAI repo installed on host machine. Install instructions are [in the DepthAI Docs](https://docs.luxonis.com/en/latest/), basic instructions are:
+This Python script requires the DepthAI repo installed on host machine. Install instructions are [in the DepthAI Docs](https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/#first-steps-with-depthai) and OS specific instrutions are [here] (https://docs.luxonis.com/projects/api/en/latest/install/), basic instructions are:
 
 ```terminal 
 git clone https://github.com/luxonis/depthai.git
