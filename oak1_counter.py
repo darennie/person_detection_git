@@ -67,12 +67,12 @@ with dai.Device(pm.pipeline) as device:
     # has changed we write the current max count value to file
     while True:
         
-        pv.prepareFrames(blocking=True)
-        frame = pv.get("color")
+        #pv.prepareFrames(blocking=True)
+        #frame = pv.get("color")
         nn_data = nm.decode(nm.outputQueue.get())
-        nm.draw(frame, nn_data)
-        cv2.putText(frame, f"People count: {len(nn_data)}", (5, 30), cv2.FONT_HERSHEY_TRIPLEX, 1, (0,0,255))
-        cv2.imshow("color", frame)
+        #nm.draw(frame, nn_data)
+        #cv2.putText(frame, f"People count: {len(nn_data)}", (5, 30), cv2.FONT_HERSHEY_TRIPLEX, 1, (0,0,255))
+        #cv2.imshow("color", frame)
 
         # count the people
         pcount = len(nn_data)

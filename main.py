@@ -132,9 +132,9 @@ with open(filename, "a") as log:
                 frame = pv.get("color")
 
             nn_data = nm.decode(nm.outputQueue.get())
-            nm.draw(frame, nn_data)
-            cv2.putText(frame, f"People count: {len(nn_data)}", (5, 30), cv2.FONT_HERSHEY_TRIPLEX, 1, (0,0,255))
-            cv2.imshow("color", frame)
+            #nm.draw(frame, nn_data)
+            #cv2.putText(frame, f"People count: {len(nn_data)}", (5, 30), cv2.FONT_HERSHEY_TRIPLEX, 1, (0,0,255))
+            #cv2.imshow("color", frame)
 
             #this calls the function that we created earlier
             write_to_csv()
