@@ -64,4 +64,4 @@ Once there add the following line of code to the bottom of the existing text to 
 ```terminal 
 @python3 /home/pi/person_detection/restart.py
 ```
-Follow the instructions within the terminal to save and exit as appropriate. Once this is complete the restart.py will run on the reboot of the RPi.
+Follow the instructions within the terminal to save and exit as appropriate. Once this is complete the restart.py will run on the reboot of the RPi. Please note that the path to the file must be adjusted to suit the user's directory.
